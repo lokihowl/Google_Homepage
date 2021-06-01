@@ -7,13 +7,6 @@
 .main {
     font-size: 14px;
     font-family: Arial, sans-serif;
-    display:grid;
-    grid-template-areas:
-    "navi"
-    "logo"
-    "searchy"
-    "sock"
-    "foot";
 }
 .nav-bar {
     display: flex;
@@ -50,7 +43,6 @@
     padding: 8px;
 }
 .Glogo {
-    grid-area: "logo"; 
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -58,57 +50,78 @@
     max-height: 290px;
     height: calc(100%-560px);
 }
-
-.search-bar {
-    grid-area: "searchy"; 
-    background-color: yellow;
+.img-area{
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
 }
-.pre-footer {
-    grid-area: "sock"; 
+.search-bar-area{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: 35px 165px;
+    width:auto;
+}
+.the-bar {
+    border-radius: 24px;
+    height: 44px;
+    box-shadow: none;
+    border: 1px solid #dfe1e5;
+    background-color: transparent;
+}
+.pre-footer { 
     background-color: green;
 }
 .footer {
-    grid-area: "foot"; 
     background-color: red;
 }
 
 </style>
 
 <div class="main">
-
+    
     <div class="nav-bar"> 
-
         <a href="" target="_blank" class="aboutstore"> About </a>
         <a href="" target="_blank" class="aboutstore"> Store </a>
-
-        <div class="login-bar"> 
-        
+         <div class= "login-bar"> 
             <div class="login-items">
-            
                 <a href="" target= "_blank" class="login-items">Gmail</a>
                 <a href="" target= "_blank" class="login-items">Images</a>
-
                     <div class="icon-bits">
                         <span class="material-icons app-logo"  href="" target="_blank">
                             apps </span>
                         <span class="material-icons" href="" target="_blank">
                           account_circle </span>
-
                          </div>
                 </div>
-
         </div>
-
     </div>
 
  </div>
-
     <div class="Glogo"> 
-        <div class="img-spot">
-            
+        <div class="img-area">
+            <img href="" 
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="Google Logo">
         </div> 
     </div>
-    <div class="search-bar"> 3 </div>
+
+    <div class="search-bar-area">
+
+        <div class="search-bar"> 
+             <input class="the-bar" type="search"></input>
+         </div>
+
+     </div>
+
+
     <div class="pre-footer"> 4 </div>
     <div class="footer"> 5 </div>
 </div>
