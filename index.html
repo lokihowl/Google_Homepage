@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+<style>
+.main {
+    display:grid;
+    grid-template-areas:
+    "navi"
+    "logo"
+    "searchy"
+    "sock"
+    "foot";
+}
+.nav-bar{
+    grid-area: "navi"; 
+    background-color: aliceblue;
+}
+.Glogo {
+    grid-area: "logo"; 
+    background-color: rebeccapurple;
+}
+.search-bar{
+    grid-area: "searchy"; 
+    background-color: yellow;
+}
+.pre-footer{
+    grid-area: "sock"; 
+    background-color: green;
+}
+.footer{
+    grid-area: "foot"; 
+    background-color: red;
+}
+</style>
+<div class="main">
+    <div class="nav-bar"> 1 </div>
+    <div class="Glogo"> 2 </div>
+    <div class="search-bar"> 3 </div>
+    <div class="pre-footer"> 4 </div>
+    <div class="footer"> 5 </div>
+</div>
+</body>
+
+</html>
