@@ -126,7 +126,40 @@ html {
 }
 .footer {
     background-color: red;
+
 }
+.footer-bar {
+    display: flex;
+    height: 60px;
+    align-items: flex-end;
+    background-color: lightgrey;
+}
+.footer-items-right{
+    display: flex;
+    float: right;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px;
+    color: black;
+    align-items: center;
+    box-sizing: border-box;
+}
+.footer-items-left{
+    display: flex;
+    float: left;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+    align-items: right;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+
 
 </style>
 
@@ -167,10 +200,23 @@ html {
      </div>
 
 
-    <div class="pre-footer"> </div>
+    <div class="pre-footer">  </div>
 
 
-    <div class="footer"> Footer stuff </div>
+    <div class="footer"> 
+        <div class="footer-bar"> 
+            <a href="" target="_blank" class="footer-items-left"> Advertising </a>
+            <a href="" target="_blank" class="footer-items-left"> Business </a>
+            <a href="" target="_blank" class="footer-items-left"> How Search Works </a>
+             <div class= "login-bar"> 
+                <div class="footer-items-right">
+                    <a href="" target= "_blank" class="footer-items-right">Privacy</a>
+                    <a href="" target= "_blank" class="footer-items-right">Terms</a>
+                    <a href="" target= "_blank" class="footer-items-right">Settings</a>
+                    </div>
+            </div>
+
+    </div>
 
 </body>
 
